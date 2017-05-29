@@ -1,0 +1,4 @@
+<div>{{ctxProp}}</div>
+<input type="text" [value]="ctxProp" (input)="ctxProp = $event.target.value"/>
+
+<button md-button (click)="doStuff()">DoStuff!</button>
