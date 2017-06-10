@@ -3,7 +3,7 @@ import { DemoService} from 'stuff-lib';
 import { fromByteArray } from 'base64-js';
 
 const sha256 = require('sha256');
-const other = require('sha256/other');
+// const other = require('sha256/other');
 
 
 @Component({
@@ -18,7 +18,6 @@ export class Basic {
 
     this.demoService.info = 'Hello World';
     console.log('demoService', this.demoService.doStuff());
-    console.log('other', other);
   }
 
   doStuff() {
